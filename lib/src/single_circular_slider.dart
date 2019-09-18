@@ -147,7 +147,7 @@ class _SingleCircularSliderState extends State<SingleCircularSlider> {
           showHandlerOutter: widget.showHandlerOutter ?? true,
           shouldCountLaps: widget.shouldCountLaps ?? false,
           dashList: widget.dashList,
-          counterClockwise: widget.counterClockwise,
+          counterClockwise: widget.counterClockwise ?? false,
         ));
   }
 }
