@@ -30,6 +30,7 @@ class CircularSliderPaint extends StatefulWidget {
   final double sliderStrokeWidth;
   final bool shouldCountLaps;
   final List<double> dashList;
+  final bool counterClockwise;
 
   CircularSliderPaint({
     @required this.mode,
@@ -50,6 +51,7 @@ class CircularSliderPaint extends StatefulWidget {
     @required this.sliderStrokeWidth,
     @required this.shouldCountLaps,
     this.dashList,
+    this.counterClockwise,
   });
 
   @override
@@ -188,6 +190,7 @@ class _CircularSliderState extends State<CircularSliderPaint> {
       showRoundedCapInSelection: widget.showRoundedCapInSelection,
       showHandlerOutter: widget.showHandlerOutter,
       sliderStrokeWidth: widget.sliderStrokeWidth,
+      counterClockwise: widget.counterClockwise,
     );
   }
 

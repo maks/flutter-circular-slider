@@ -70,6 +70,9 @@ class SingleCircularSlider extends StatefulWidget {
   /// if specified, use a dashed-line with the given Dash list as the base circle
   final List<double> dashList;
 
+  /// if specified, displays the selection in a counter-clockwise direction
+  final bool counterClockwise;
+
   SingleCircularSlider(
     this.divisions,
     this.position, {
@@ -89,6 +92,7 @@ class SingleCircularSlider extends StatefulWidget {
     this.sliderStrokeWidth,
     this.shouldCountLaps,
     this.dashList,
+    this.counterClockwise,
   })  : assert(position >= 0 && position <= divisions,
             'init has to be > 0 and < divisions value'),
         assert(divisions >= 0 && divisions <= 300,
@@ -143,6 +147,7 @@ class _SingleCircularSliderState extends State<SingleCircularSlider> {
           showHandlerOutter: widget.showHandlerOutter ?? true,
           shouldCountLaps: widget.shouldCountLaps ?? false,
           dashList: widget.dashList,
+          counterClockwise: widget.counterClockwise,
         ));
   }
 }
