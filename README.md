@@ -101,6 +101,8 @@ There are two different options:
 | sliderStrokeWidth         |                        12.0                         | The stroke width for the slider (thickness).                                                                            |
 | shouldCountLaps           |                        false                        | If true, onSelectionChange will also return the updated number of laps.                                                 |
 | dashList           |                        null                        | If specified, will draw the base circle as a dashed line. Is a `List<double>`, specifying the Dash intervals.            |
+| counterClockwise           |                        false                        | If specified, will draw the slider selection in a counter-clockwise direction.            |
+
 
 ### Use Cases
 
